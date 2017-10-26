@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :drab_spike, DrabSpike.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  # password: "postgres",
   database: "drab_spike_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

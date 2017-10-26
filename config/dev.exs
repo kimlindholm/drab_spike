@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :drab_spike, DrabSpike.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  # password: "postgres",
   database: "drab_spike_dev",
   hostname: "localhost",
   pool_size: 10
