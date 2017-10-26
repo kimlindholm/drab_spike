@@ -1,6 +1,10 @@
 defmodule DrabSpike.Application do
   use Application
 
+  @moduledoc """
+  Setup for OTP supervisors and workers.
+  """
+
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   def start(_type, _args) do

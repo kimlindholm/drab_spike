@@ -26,7 +26,6 @@ defmodule DrabSpikeWeb.ConnCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(DrabSpike.Repo)
     unless tags[:async] do
