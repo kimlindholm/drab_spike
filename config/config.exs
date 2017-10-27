@@ -17,6 +17,10 @@ config :drab_spike, DrabSpikeWeb.Endpoint,
   pubsub: [name: DrabSpike.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+config :drab, disable_controls_while_processing: false
+
+config :phoenix, :template_engines, drab: Drab.Live.Engine
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

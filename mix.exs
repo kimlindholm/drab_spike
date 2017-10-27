@@ -41,6 +41,7 @@ defmodule DrabSpike.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:drab, "~> 0.5"},
       {:cowboy, "~> 1.0"}
     ]
   end
