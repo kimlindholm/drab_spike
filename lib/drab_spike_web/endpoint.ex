@@ -9,7 +9,7 @@ defmodule DrabSpikeWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/", from: :drab_spike, gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(css fonts images js favicon.ico robots.txt semantic-ui)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
