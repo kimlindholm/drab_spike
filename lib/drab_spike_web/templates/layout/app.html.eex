@@ -7,29 +7,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello DrabSpike!</title>
+    <title>Drab Spike</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="shortcut icon" type="image/x-icon" href="<%= static_path(@conn, "/favicon.ico") %>"/>
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+    <div class="ui text container center aligned">
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <p class="ui hidden warning message"" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="ui hidden info message" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    </div> <!-- /container -->
+    </div>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <%= Drab.Client.js(@conn) %>
   </body>

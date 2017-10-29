@@ -16,6 +16,7 @@ defmodule DrabSpikeWeb.PageCommander do
   onload :page_loaded
 
   def page_loaded(socket) do
-    set_prop socket, "div.jumbotron h2", innerText: "This page has been drabbed"
+    exec_js(socket, "$('[data-progress]').transition('fade', '2s')")
+    exec_js(socket, "$('[data-start-button]').transition('jiggle')")
   end
 end

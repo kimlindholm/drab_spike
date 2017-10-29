@@ -1,36 +1,34 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<div data-progress="true" class="ui tiny progress blue task-progress">
+  <div data-progress-bar="true" class="bar"></div>
+  <div data-progress-label="true" class="label"></div>
 </div>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+<div class="button-container">
+  <div data-cancel-area="true" class="secondary-button-area">
   </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+  <div data-start-area="true">
+    <button drab-click="start_process" data-start-button="true"
+            class="ui primary button massive">
+      <i class="play icon"></i> Start
+    </button>
   </div>
 </div>
+
+<div data-statistics-area="true" class="statistics-container">
+  <div class="ui three statistics">
+    <div class="statistic">
+      <div data-waiting-value="true" class="value">6</div>
+      <div class="label">Waiting</div>
+    </div>
+    <div class="statistic">
+      <div data-running-value="true" class="value">0</div>
+      <div class="label">Running</div>
+    </div>
+    <div class="statistic">
+      <div data-done-value="true" class="value">0</div>
+      <div class="label">Done</div>
+    </div>
+  </div>
+</div>
+
+<div data-loader="true" class="ui inline centered loader"></div>
