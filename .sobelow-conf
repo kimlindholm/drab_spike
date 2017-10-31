@@ -1,5 +1,5 @@
 [
-  with_code: true,
+  verbose: true,
   private: false,
   skip: false,
   router: "",
