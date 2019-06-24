@@ -1,7 +1,7 @@
 # Drab Spike
 
 [![CircleCI](https://circleci.com/gh/kimlindholm/drab_spike/tree/master.svg?style=shield)](https://circleci.com/gh/kimlindholm/drab_spike/tree/master)
-[![Ebert](https://ebertapp.io/github/kimlindholm/drab_spike.svg)](https://ebertapp.io/github/kimlindholm/drab_spike)
+[![SourceLevel](https://app.sourcelevel.io/github/kimlindholm/drab_spike.svg)](https://app.sourcelevel.io/github/kimlindholm/drab_spike)
 [![codebeat badge](https://codebeat.co/badges/07ad392f-cf71-4b5a-a933-903a952588a7)](https://codebeat.co/projects/github-com-kimlindholm-drab_spike-master)
 
 Proof-of-concept app using Drab
